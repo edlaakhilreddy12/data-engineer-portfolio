@@ -41,7 +41,7 @@ export const Experience = () => {
     },
     {
       company: "Infogain",
-      role: "Associate Data Engineer",
+      role: "Data Engineer",
       location: "Bangalore, India",
       period: "Jul 2020 - Dec 2022",
       achievements: [

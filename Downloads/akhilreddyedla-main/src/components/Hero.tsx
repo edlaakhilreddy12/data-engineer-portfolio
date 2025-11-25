@@ -309,28 +309,20 @@ export const Hero = () => {
 
               {/* Floating Elements */}
               <motion.div
-                className="absolute -top-10 -left-10 bg-gradient-to-r from-gold/90 to-primary/70 text-jet font-semibold px-4 py-2 rounded-full shadow-lg"
+                className="absolute -top-10 -left-10 bg-gradient-to-r from-gold/90 to-primary/70 text-ivory font-semibold px-4 py-2 rounded-full shadow-lg"
                 animate={{ y: [0, -10, 0] }}
                 transition={{ duration: 3, repeat: Infinity }}
               >
-                🚀 5+ Years Experience
+                5+ Years Experience
               </motion.div>
 
               <motion.div
-                className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-accent/80 to-gold/80 text-jet font-semibold px-4 py-2 rounded-full shadow-lg"
+                className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-accent/80 to-gold/80 text-ivory font-semibold px-4 py-2 rounded-full shadow-lg"
                 animate={{ y: [0, 10, 0] }}
                 transition={{ duration: 3.5, repeat: Infinity }}
               >
-                ☁️ AWS & GCP
+                AWS & GCP
               </motion.div>
-
-              {/* <motion.div
-                className="absolute -top-6 -right-8 bg-gradient-to-r from-accent/80 to-gold/80 text-jet font-semibold px-4 py-2 rounded-full shadow-lg"
-                animate={{ y: [0, 12, 0] }}
-                transition={{ duration: 4, repeat: Infinity }}
-              >
-                ⚙️ ETL & Data Pipelines
-              </motion.div> */}
             </div>
           </motion.div>
         </div>
