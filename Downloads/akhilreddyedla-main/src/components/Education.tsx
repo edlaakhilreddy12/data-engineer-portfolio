@@ -13,14 +13,14 @@ export const Education = () => {
   const education = [
     {
       degree: "Master of Science in Computer Science",
-      school: "University of Missouri | Warrensburg , MO",
-      // year: "Jan 2023 - May 2024",
+      school: "University of Missouri | Warrensburg, MO",
+      year: "Jan 2023 - May 2024",
       gpa: "3.8/4.0",
     },
     {
       degree: "Bachelor of Technology in Computer Science",
-      school: "Jawaharlal Nehru Technological University | Hyderabad , India ",
-      // year: "Aug 2018 - May 2022",
+      school: "Jawaharlal Nehru Technological University | Hyderabad, India",
+      year: "Aug 2016 - May 2020",
       gpa: "3.7/4.0",
     },
   ];
@@ -59,11 +59,11 @@ export const Education = () => {
                   {edu.degree}
                 </h3>
                 <p className="text-gold font-semibold text-lg mb-1">{edu.school}</p>
-                <div className="flex items-center gap-4 text-stone">
-         <Calendar size={16} className="mr-2" />
+                <div className="flex items-center gap-2 text-stone">
+                  <Calendar size={16} />
                   <span>{edu.year}</span>
-                  {/* <span>•</span> */}
-                  {/* <span className="text-primary font-semibold">GPA: {edu.gpa}</span> */}
+                  <span>•</span>
+                  <span className="text-primary font-semibold">GPA: {edu.gpa}</span>
                 </div>
               </div>
             </motion.div>
