@@ -194,6 +194,11 @@ import { Button } from "@/components/ui/button";
 import profileImage from "/profilepic.jpg";
 
 export const Hero = () => {
+  // Determine base path for assets based on deployment platform
+  const basePath = window.location.hostname.includes('github.io') 
+    ? '/data-engineer-portfolio' 
+    : '';
+  
   return (
     <section
       id="hero"
@@ -270,7 +275,7 @@ export const Hero = () => {
                   <ArrowDown className="ml-2" size={18} />
                 </Button>
               </Link>
-              <a href="/Akhil-Reddy-Edla.pdf" download="Akhil-Reddy-Edla.pdf">
+              <a href={`${basePath}/Akhil-Reddy-Edla.pdf`} download="Akhil-Reddy-Edla.pdf">
                 <Button
                   size="lg"
                   variant="outline"
