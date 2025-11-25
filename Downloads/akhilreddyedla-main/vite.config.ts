@@ -5,7 +5,7 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: '/data-engineer-portfolio/',
+  base: process.env.VERCEL ? '/' : '/data-engineer-portfolio/',
   server: {
     host: "::",
     port: 8080,
