@@ -1,0 +1,218 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Classic Luxury Design System */
+
+@layer base {
+  :root {
+    /* Classic Luxury Color Palette - HSL Values */
+    --background: 36 30% 97%; /* Ivory Cream */
+    --foreground: 0 0% 5%; /* Jet Black */
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 5%;
+
+    --popover: 36 30% 97%;
+    --popover-foreground: 0 0% 5%;
+
+    --primary: 38 29% 61%; /* Antique Gold */
+    --primary-foreground: 0 0% 5%;
+
+    --secondary: 210 38% 18%; /* Royal Navy */
+    --secondary-foreground: 36 30% 97%;
+
+    --muted: 0 0% 62%; /* Stone Gray */
+    --muted-foreground: 0 0% 38%;
+
+    --accent: 0 56% 27%; /* Deep Bordeaux */
+    --accent-foreground: 36 30% 97%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 36 30% 97%;
+
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 38 29% 61%;
+
+    --radius: 0.75rem;
+
+    /* Custom Properties */
+    --jet: 0 0% 5%;
+    --charcoal: 0 0% 11%;
+    --gold: 38 29% 61%;
+    --ivory: 36 30% 97%;
+    --stone: 0 0% 62%;
+    --bordeaux: 0 56% 27%;
+    --navy: 210 38% 18%;
+  }
+
+  .dark {
+    --background: 0 0% 5%; /* Jet Black */
+    --foreground: 36 30% 97%; /* Ivory */
+
+    --card: 0 0% 11%; /* Charcoal */
+    --card-foreground: 36 30% 97%;
+
+    --popover: 0 0% 11%;
+    --popover-foreground: 36 30% 97%;
+
+    --primary: 38 29% 61%; /* Gold */
+    --primary-foreground: 0 0% 5%;
+
+    --secondary: 210 38% 18%; /* Navy */
+    --secondary-foreground: 36 30% 97%;
+
+    --muted: 0 0% 20%;
+    --muted-foreground: 0 0% 62%;
+
+    --accent: 0 56% 27%; /* Bordeaux */
+    --accent-foreground: 36 30% 97%;
+
+    --destructive: 0 62% 50%;
+    --destructive-foreground: 36 30% 97%;
+
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 38 29% 61%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-inter;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-poppins font-extrabold;
+  }
+
+  /* Smooth scrolling */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-charcoal;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #C5A572 0%, #6B1E1E 100%);
+    border-radius: 5px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-gold;
+  }
+}
+
+@layer components {
+  /* Glass morphism effect */
+  .glass {
+    background: rgba(28, 28, 28, 0.6);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(197, 165, 114, 0.1);
+  }
+
+  /* Gradient text */
+  .gradient-text {
+    background: linear-gradient(135deg, #C5A572 0%, #6B1E1E 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Shimmer effect */
+  .shimmer {
+    background: linear-gradient(
+      90deg,
+      transparent 0%,
+      rgba(197, 165, 114, 0.4) 50%,
+      transparent 100%
+    );
+    background-size: 200% 100%;
+    animation: shimmer 3s ease-in-out infinite;
+  }
+
+  /* Glow button */
+  .btn-glow {
+    @apply relative overflow-hidden;
+    box-shadow: 0 0 20px rgba(197, 165, 114, 0.3);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .btn-glow:hover {
+    box-shadow: 0 0 30px rgba(197, 165, 114, 0.6);
+    transform: translateY(-2px);
+  }
+
+  /* Card hover effect */
+  .card-hover {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .card-hover:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  }
+
+  /* Underline animation */
+  .underline-animate {
+    @apply relative;
+  }
+
+  .underline-animate::after {
+    content: '';
+    @apply absolute bottom-0 left-0 w-full h-0.5 bg-primary origin-bottom-right;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+  }
+
+  .underline-animate:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom-left;
+  }
+
+  /* Parallax container */
+  .parallax-container {
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* Focus visible for accessibility */
+  *:focus-visible {
+    @apply outline-none ring-2 ring-primary ring-offset-2 ring-offset-background;
+  }
+}
+
+@layer utilities {
+  /* Text shadow utilities */
+  .text-shadow-sm {
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+  }
+
+  .text-shadow-md {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  .text-shadow-lg {
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  }
+
+  /* Blur utilities */
+  .backdrop-blur-glass {
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+}
