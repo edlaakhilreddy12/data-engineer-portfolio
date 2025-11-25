@@ -70,6 +70,32 @@ export const Contact = () => {
                 </div>
               </motion.a>
             ))}
+
+            {/* LinkedIn Badge */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.4 }}
+              className="flex justify-center mt-8"
+            >
+              <div 
+                className="badge-base LI-profile-badge" 
+                data-locale="en_US" 
+                data-size="medium" 
+                data-theme="light" 
+                data-type="VERTICAL" 
+                data-vanity="akhil-e-3452b1169" 
+                data-version="v1"
+              >
+                <a 
+                  className="badge-base__link LI-simple-link" 
+                  href="https://www.linkedin.com/in/akhil-e-3452b1169?trk=profile-badge"
+                >
+                  Akhil E.
+                </a>
+              </div>
+            </motion.div>
           </motion.div>
 
           {/* Right: Contact Form */}

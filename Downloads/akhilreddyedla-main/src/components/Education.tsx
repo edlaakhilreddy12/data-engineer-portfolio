@@ -14,13 +14,13 @@ export const Education = () => {
     {
       degree: "Master of Science in Computer Science",
       school: "University of Missouri | Warrensburg , MO",
-      year: "Jan 2023 - May 2024",
+      // year: "Jan 2023 - May 2024",
       gpa: "3.8/4.0",
     },
     {
       degree: "Bachelor of Technology in Computer Science",
       school: "Jawaharlal Nehru Technological University | Hyderabad , India ",
-      year: "Aug 2018 - May 2022",
+      // year: "Aug 2018 - May 2022",
       gpa: "3.7/4.0",
     },
   ];
