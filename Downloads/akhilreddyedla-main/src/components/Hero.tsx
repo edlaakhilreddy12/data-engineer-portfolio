@@ -270,7 +270,7 @@ export const Hero = () => {
                   <ArrowDown className="ml-2" size={18} />
                 </Button>
               </Link>
-              <a href="/akhil-reddy.pdf" download>
+              <a href="/Akhil-Reddy-Edla.pdf" download="Akhil-Reddy-Edla.pdf">
                 <Button
                   size="lg"
                   variant="outline"
