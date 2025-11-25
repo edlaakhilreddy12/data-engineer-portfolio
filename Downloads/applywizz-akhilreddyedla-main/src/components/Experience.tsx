@@ -28,7 +28,7 @@ export const Experience = () => {
       company: "Fifth Third Bank",
       role: "Data Engineer",
       location: "Evansville, IN",
-      period: "Dec 2023 - Oct 2024",
+      period: "Dec 2022 - Oct 2024",
       achievements: [
         "Engineered batch/streaming ETL pipelines on AWS → 45% improved data availability",
         "Built Spark Structured Streaming with Kafka for real-time fraud detection",
@@ -43,7 +43,7 @@ export const Experience = () => {
       company: "Infogain",
       role: "Associate Data Engineer",
       location: "Bangalore, India",
-      period: "Jul 2021 - Dec 2022",
+      period: "Jul 2020 - Dec 2022",
       achievements: [
         "Designed high-frequency ETL with Python multiprocessing, Kafka, Spark & Airflow",
         "Built event-driven frameworks with Spark Structured Streaming for real-time dashboards",
