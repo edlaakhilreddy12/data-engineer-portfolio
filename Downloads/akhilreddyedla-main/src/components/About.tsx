@@ -41,7 +41,7 @@ export const About = () => {
             <p className="text-lg text-muted-foreground leading-relaxed mb-6" data-aos="fade-up" data-aos-delay="100">
               Data Engineer with <span className="text-gold font-semibold">5+ years of experience</span> designing,
               building, and optimizing end-to-end data pipelines, lakehouse architectures, and cloud analytics platforms
-              on AWS and GCP.
+              on AWS, Azure, and GCP.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed" data-aos="fade-up" data-aos-delay="200">
               Skilled in real-time and batch data processing using{" "}

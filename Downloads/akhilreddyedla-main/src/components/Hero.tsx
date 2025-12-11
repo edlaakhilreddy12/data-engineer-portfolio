@@ -256,7 +256,8 @@ export const Hero = () => {
             >
               Data Engineer specializing in real-time and batch data processing,
               ETL orchestration, and cloud analytics on{" "}
-              <span className="text-gold font-semibold">AWS</span> and{" "}
+              <span className="text-gold font-semibold">AWS</span>,{" "}
+              <span className="text-gold font-semibold">Azure</span>, and{" "}
               <span className="text-gold font-semibold">GCP</span>.
             </motion.p>
 
@@ -321,7 +322,7 @@ export const Hero = () => {
                 animate={{ y: [0, 10, 0] }}
                 transition={{ duration: 3.5, repeat: Infinity }}
               >
-                AWS & GCP
+                AWS, Azure & GCP
               </motion.div>
             </div>
           </motion.div>
