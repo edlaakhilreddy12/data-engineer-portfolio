@@ -27,6 +27,7 @@ export const Skills = () => {
       skills: [
         "Spark (PySpark)",
         "Spark SQL",
+        "Databricks",
         "Kafka",
         "Delta Lake",
         "Flink",
@@ -60,8 +61,8 @@ export const Skills = () => {
     { name: "PySpark", level: 95 },
     { name: "Python", level: 90 },
     { name: "AWS", level: 85 },
-    { name: "BigQuery", level: 88 },
-     { name: "sql", level:  92},
+    { name: "Azure", level: 82 },
+    { name: "Databricks", level: 88 },
   ];
 
   return (
