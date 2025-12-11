@@ -40,7 +40,7 @@ export const Experience = () => {
       ],
     },
     {
-      company: "Kapital Info Tech",
+      company: "Infogain",
       role: "Data Engineer",
       location: "Bangalore, India",
       period: "Jul 2020 - Dec 2022",
