@@ -40,7 +40,7 @@ export const Experience = () => {
       ],
     },
     {
-      company: "Infogain",
+      company: "Kaptiol Info Tech",
       role: "Data Engineer",
       location: "Bangalore, India",
       period: "Jul 2020 - Dec 2022",
