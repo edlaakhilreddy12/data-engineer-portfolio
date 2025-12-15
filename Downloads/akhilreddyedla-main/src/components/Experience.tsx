@@ -48,7 +48,7 @@ export const Experience = () => {
         "Designed high-frequency ETL with Python multiprocessing, Kafka, Spark & Airflow",
         "Built event-driven frameworks with Spark Structured Streaming for real-time dashboards",
         "Automated validation with Pytest → 99% accuracy",
-        "Enhanced workflows to process millions of API calls daily with 60% lower latency",
+        "Enhanced workflows to process millions of API calls daily with 50% lower latency",
       ],
     },
   ];
